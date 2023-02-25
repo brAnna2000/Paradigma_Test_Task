@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?load=Geolink&amp;lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
     <title>Document</title>
 </head>
@@ -20,7 +20,7 @@
         <h1>Быстро оставить заявку</h1>
         <p>Введите номер — позвоним вам в течение 5-10 минут в рабочее время</p>
         <p>Введите ваш номер телефона</p>
-        <input type="tel" name="" id="phone">
+        <input type="tel" id="phone">
         <button type="submit">Перезвоните мне</button>
         <label class="container" for="check">
             Нажимая кнопку вы соглашаетесь  с условиями <span>Политики конфиденциальности</span>
@@ -29,7 +29,7 @@
         </label>
     </div>
     <aside>
-        <div>
+        <div class="mouse">
             <img src="img/desktop/mouse-wheel.svg">
             <img src="img/desktop/mouse-body.svg" alt="mouse">
         </div>
@@ -37,7 +37,7 @@
         <p>Scroll down</p>
     </aside>
     <main>
-        <div class="header">
+        <header>
             <ul class="info">
                 <li>
                     <a href="#">
@@ -58,7 +58,7 @@
                 </li>
                 <li>
                     <img class="round" src="img/common/calculate.svg" alt="calculate">
-                    <b class="link-hover-solid two-lines">
+                    <b class="link-hover-solid">
                         <a href="#">Рассчитать стоимость</a>
                         <a href="#">ремонта за 45 сек</a>
                     </b>
@@ -90,32 +90,32 @@
                 </li>
             </ul>
             <hr>
-            <ul class="nav">
-                <li>Главная</li>
-                <li>услуги
-                    <ul>
-                        <li>Ремонт дивгателей KIA</li>
-                        <li>Ремонт двигателей HYundai</li>
-                    </ul>
+            <nav>
+                <a href="#">Главная</a>
+                <a href="#">услуги
+                    <div>
+                        <a href="#">Ремонт двигателей KIA</a>
+                        <a href="#">Ремонт двигателей HYundai</a>
+                    </div>
                 </li>
-                <li>модели двигателей</li>
-                <li>отзывы</li>
-                <li>стоимость</li>
-                <li>примеры работ</li>
-                <li>полезные статьи</li>
-                <li>о компании</li>
-                <li>Контакты</li>
-            </ul>
+                <a href="#">модели двигателей</a>
+                <a href="#">отзывы</a>
+                <a href="#">стоимость</a>
+                <a href="#">примеры работ</a>
+                <a href="#">полезные статьи</a>
+                <a href="#">о компании</a>
+                <a href="#">Контакты</a>
+            </nav>
             <div class="mobile-info">
                 <div class="mobile-info__block">
-                    <img src="img/common/map.svg" alt="map" srcset="img/common/map.svg 20.3w" sizes="20.3vw">
+                    <img class="mobile-info__block__img" src="img/common/map.svg" alt="map" srcset="img/common/map.svg 20.3w" sizes="20.3vw">
                     <div class="mobile-info__block__text">
                         <p>Адрес автоцентра:</p>
                         <p><b class="link-hover-solid"><a href="#">Шоссейный проезд, с4 а/2</a></b></p>
                     </div> 
                 </div>
                 <div class="mobile-info__block">
-                    <img src="img/common/calculate.svg" alt="calculate" srcset="img/common/calculate.svg 20.3w" sizes="20.3vw">
+                    <img class="mobile-info__block__img" src="img/common/calculate.svg" alt="calculate" srcset="img/common/calculate.svg 20.3w" sizes="20.3vw">
                     <div class="mobile-info__block__text">
                         <p>Рассчитать</p>
                         <p>стоимость ремонта</p>
@@ -123,7 +123,7 @@
                     </div> 
                 </div>
                 <div class="mobile-info__block">
-                    <img src="img/mobile/man.svg" alt="man" srcset="img/mobile/man.svg 20.3w" sizes="20.3vw"> 
+                    <img class="mobile-info__block__img" src="img/mobile/man.svg" alt="man" srcset="img/mobile/man.svg 20.3w" sizes="20.3vw"> 
                     <div class="mobile-info__block__text">
                         <p>Есть вопрос?</p>
                         <p><b>Задайте его нашему</b></p>
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </div> 
-        </div> 
+        </header> 
         <div class="center">
             <div>
                 <h1>Профессиональный <b>ремонт двигателей</b> HYUNDAI и KIA с <b>гарантией 1 год</b> за 4-7 дней</h1>
