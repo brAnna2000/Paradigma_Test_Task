@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?load=Geolink&amp;lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="popup">
+        <div class="response">
+            <p>Мы вам перезвоним!</p>
+        </div>
+        <img src="img/common/cross.svg" alt="cross">
+        <h1>Быстро оставить заявку</h1>
+        <p>Введите номер — позвоним вам в течение 5-10 минут в рабочее время</p>
+        <p>Введите ваш номер телефона</p>
+        <input type="tel" name="" id="phone">
+        <button type="submit">Перезвоните мне</button>
+        <label class="container" for="check">
+            Нажимая кнопку вы соглашаетесь  с условиями <span>Политики конфиденциальности</span>
+            <input type="checkbox" id="check">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <aside>
+        <div>
+            <img src="img/desktop/mouse-wheel.svg">
+            <img src="img/desktop/mouse-body.svg" alt="mouse">
+        </div>
+        <hr>
+        <p>Scroll down</p>
+    </aside>
+    <main>
+        <div class="header">
+            <ul class="info">
+                <li>
+                    <a href="#">
+                        <img class="logo" src="img/desktop/logo_desk.svg" alt="logo">
+                    </a>
+                </li>
+                <li>Ремонтируем двигатели Hyundai и Kia с 2012 года</li>
+                <li>
+                    <img class="round" src="img/common/map.svg" alt="map"> 
+                    <p>Адрес автоцентра: Москва, Шоссейный проезд, с4 а/2</p>
+                </li>
+                <li>
+                    <img class="location" src="img/desktop/location.svg" alt="location">
+                    <b class="link-hover-solid">
+                        <span class="ymaps-geolink" data-bounds="[55.706802, 37.709290],
+                        [55.706802, 37.709290]]" data-type="geo"><a href="#">Смотреть на карте</a></span>
+                    </b>
+                </li>
+                <li>
+                    <img class="round" src="img/common/calculate.svg" alt="calculate">
+                    <b class="link-hover-solid two-lines">
+                        <a href="#">Рассчитать стоимость</a>
+                        <a href="#">ремонта за 45 сек</a>
+                    </b>
+                </li>
+                <li>
+                    Задайте вопрос, мы сейчас онлайн 
+                    <div class="contacts">
+                        <img class="round" src="img/common/whatsapp.svg" alt="whatsapp">
+                        <img class="round" src="img/common/telegram.svg" alt="telegram">
+                        <img class="round" src="img/common/viber.svg" alt="viber">
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        <span></span>
+                        Звоните Пн-Сб 10:00 - 21:00 
+                    </p>
+                    <p class="tel">
+                        <b>+7 (925) 103 33 30</b>
+                        <img class="arrow_red" src="img/desktop/arrow_red.svg" alt="arrow_red">
+                    </p>
+                    <p class="link-hover-solid">
+                        <a href="#">Заказать звонок</a>  
+                        <img src="img/common/call.svg" alt="call" srcset="img/common/call.svg 6w" sizes="(max-width: 992px) 1.9vw, 0.3vw">
+                    </p>
+                </li>
+                <li>
+                    <img src="img/mobile/menu_white.svg" alt="menu_white" srcset="img/mobile/menu_white.svg 4.7w" sizes="4.7vw">
+                </li>
+            </ul>
+            <hr>
+            <ul class="nav">
+                <li>Главная</li>
+                <li>услуги
+                    <ul>
+                        <li>Ремонт дивгателей KIA</li>
+                        <li>Ремонт двигателей HYundai</li>
+                    </ul>
+                </li>
+                <li>модели двигателей</li>
+                <li>отзывы</li>
+                <li>стоимость</li>
+                <li>примеры работ</li>
+                <li>полезные статьи</li>
+                <li>о компании</li>
+                <li>Контакты</li>
+            </ul>
+            <div class="mobile-info">
+                <div class="mobile-info__block">
+                    <img src="img/common/map.svg" alt="map" srcset="img/common/map.svg 20.3w" sizes="20.3vw">
+                    <div class="mobile-info__block__text">
+                        <p>Адрес автоцентра:</p>
+                        <p><b class="link-hover-solid"><a href="#">Шоссейный проезд, с4 а/2</a></b></p>
+                    </div> 
+                </div>
+                <div class="mobile-info__block">
+                    <img src="img/common/calculate.svg" alt="calculate" srcset="img/common/calculate.svg 20.3w" sizes="20.3vw">
+                    <div class="mobile-info__block__text">
+                        <p>Рассчитать</p>
+                        <p>стоимость ремонта</p>
+                        <p><b class="link-hover-solid"><a href="#">за 45 сек</a></b></p>
+                    </div> 
+                </div>
+                <div class="mobile-info__block">
+                    <img src="img/mobile/man.svg" alt="man" srcset="img/mobile/man.svg 20.3w" sizes="20.3vw"> 
+                    <div class="mobile-info__block__text">
+                        <p>Есть вопрос?</p>
+                        <p><b>Задайте его нашему</b></p>
+                        <p><b>мастеру онлайн</b></p>
+                        <div>
+                            <img src="img/common/telegram.svg" alt="telegram" srcset="img/common/telegram.svg 10vw">
+                            <img src="img/common/whatsapp.svg" alt="whatsapp" srcset="img/common/whatsapp.svg 10vw">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <div class="center">
+            <div>
+                <h1>Профессиональный <b>ремонт двигателей</b> HYUNDAI и KIA с <b>гарантией 1 год</b> за 4-7 дней</h1>
+                <p>в специализированном автосервисе полного цикла</p>
+                <div class="buttons-group">
+                    <button class="button-red">
+                        <p>Начать расчет стоимости ремонта вашего двигателя</p>
+                        <img src="img/desktop/arrow.svg" alt="arrow">
+                    </button>
+                    <button class="button-transparent">
+                        <img src="img/common/whatsapp_main.svg" alt="whatsapp_main">
+                        <p>Узнайте стоимость по <span>WhatsApp</span></p>
+                    </button>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <img src="img/common/check.svg">
+                    <p><b>Без предоплаты.</b> Оплата после ремонта</p>
+                </li>
+                <li>
+                    <img src="img/common/check.svg">
+                    <p><b>Работаем официально</b> с оформлением заказ-нарядов и чеков</p>
+                </li>
+                <li>
+                    <img src="img/common/check.svg">
+                    <p><b>Оригинальные запчасти</b></p>
+                </li>
+                <li>
+                    <img src="img/common/check.svg">
+                    <p><b>Лучшие цены на рынке</b> благодаря прямым поставкам запчастей и собственному цеху механической обработки</p>
+                </li>
+            </ul>
+        </div> 
+    </main>
+    <script defer src="js/index.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script defer src="js/phone_mask.js"></script>
+</body>
+</html>
